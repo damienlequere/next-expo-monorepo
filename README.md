@@ -13,6 +13,25 @@ packages/
 Tooling: pnpm workspaces (versions in the `catalog:` of `pnpm-workspace.yaml`),
 Turborepo for tasks, Biome for lint and format.
 
+## Starting a new project
+
+This repository is a GitHub template. To start a project from it:
+
+```bash
+gh repo create <owner>/<name> --template damienlequere/next-expo-monorepo --private --clone
+cd <name>
+```
+
+Then rename the `template` placeholders:
+
+- `name` in `package.json`, and the `@template/*` packages in `apps/*/package.json`,
+  `packages/shared/package.json` and every `@template/shared` import;
+- `name`, `slug` and `scheme` in `apps/mobile/app.json`;
+- the title and description of this README.
+
+Then run `pnpm install` (to update the lockfile), `vercel link` (see below)
+and, for builds on Expo's servers, `eas init`.
+
 ## Commands
 
 ```bash
