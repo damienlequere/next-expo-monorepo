@@ -58,7 +58,7 @@ The scripts are not named `deploy`: `pnpm deploy` is a built-in pnpm command.
 
 ## The device frame (web)
 
-`/frame` is an example page shown in a device frame, as in Protagonist: on a large
+`/frame` is an example page shown in a device frame: on a large
 screen with a mouse, a phone (9:19.5), or a tablet (3:4) from 1024 px wide; on a
 phone or a touch tablet, the whole screen. Everything lives in two places:
 
