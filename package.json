@@ -15,7 +15,8 @@
     "lint": "biome check .",
     "format": "biome check --write .",
     "deploy:preview": "pnpm lint && pnpm typecheck && vercel deploy",
-    "deploy:prod": "pnpm lint && pnpm typecheck && vercel deploy --prod"
+    "deploy:prod": "pnpm lint && pnpm typecheck && vercel deploy --prod",
+    "loc": "node scripts/loc.mjs"
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",

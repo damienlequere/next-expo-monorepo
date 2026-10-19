@@ -42,6 +42,7 @@ pnpm dev:all         # both, through Turborepo
 pnpm build           # production builds
 pnpm typecheck
 pnpm lint            # pnpm format to fix
+pnpm loc             # lines of code per app and package (source / tests)
 pnpm deploy:preview  # lint, typecheck, then deploy the web site to a Vercel preview URL
 pnpm deploy:prod     # same, to production
 ```
